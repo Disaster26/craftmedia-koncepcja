@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Car audio Warszawa - Craft Media | multimedia, wygłuszanie, zabezpieczenia</title>
+<meta name="description" content="Craft Media, Warszawa-Wawer, ul. Potockich 62: montaż car audio i multimediów, wygłuszanie, oklejanie foliami, alarmy i GPS, doposażenie łodzi. Od 2002 roku. Tel. 501 184 577.">
+<meta name="theme-color" content="#0E0F11">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch.png">
+<link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" imagesizes="100vw" media="(max-width:899px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" imagesizes="100vw" media="(min-width:900px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/saira-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Saira";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/saira-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--red:#D9261C;--red2:#B81E15;--ink:#0E0F11;--ink2:#2A2D33;--mut:#5B6068;--sz:#EEF0F2;--line:#D6DAE0;--hh:68px;--w:calc(100vw - 32px);--pas:calc(100vw - 32px);--gap:clamp(64px,7vw,128px)}
+@media (min-width:900px){:root{--hh:92px;--w:min(90vw,1600px);--pas:min(calc(100vw - 2*clamp(16px,3vw,56px)),1840px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Archivo,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16.5px,.2vw + 15.6px,18.5px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Saira,"Arial Narrow",system-ui,sans-serif;font-weight:700;line-height:1.08;letter-spacing:-.005em;text-wrap:balance}
+p{margin:0}
+.wrap{width:var(--w);margin-inline:auto}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+/* linia sygnalu z logo */
+.sig{display:flex;align-items:center;height:40px;color:var(--line)}
+.sig::before,.sig::after{content:"";height:1.5px;background:currentColor;flex:1}
+.sig::before{flex:0 0 var(--pk,22%)}
+.sig svg{flex:none;width:64px;height:40px;color:var(--red);overflow:visible}
+
+/* przycisk */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:56px;padding:0 26px;background:var(--red);color:#fff;font:600 17px/1.2 Saira,system-ui,sans-serif;letter-spacing:.01em;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%);transition:background-color .2s ease}
+.btn:hover{background:var(--red2)}
+.btn svg{width:24px;height:14px;flex:none}
+.btn.ol{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7);clip-path:none}
+.btn.ol:hover{background:rgba(255,255,255,.1)}
+.btn.dk{background:var(--ink)}
+.btn.dk:hover{background:#2a2d33}
+
+/* naglowek */
+.hd{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);color:#fff;transition:background-color .25s ease,box-shadow .25s ease,color .25s ease}
+.hd .wrap{height:100%;display:flex;align-items:center;gap:24px}
+.logo{display:block;flex:none;line-height:0;color:inherit}
+.logo svg{width:122px;height:45px}
+@media (min-width:900px){.logo svg{width:168px;height:62px}}
+.nav{display:none;margin-left:auto;gap:clamp(18px,2vw,38px);align-items:center}
+.nav a{text-decoration:none;font:500 17px/1 Saira,system-ui,sans-serif;padding:10px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.nav a:hover::after,.nav a[aria-current]::after{transform:scaleX(1)}
+.nav .soc{opacity:.8;font-size:15.5px}
+.nav .soc:hover{opacity:1}
+.nav .sep{width:1px;height:22px;background:currentColor;opacity:.3}
+.hd-tel{display:none}
+.hd.solid{background:#fff;color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.burger{margin-left:auto;width:48px;height:48px;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;color:inherit;padding:0}
+.burger span{display:block;width:26px;height:2px;background:currentColor;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;height:2px;background:currentColor}
+.burger span::before{top:-8px;width:26px}.burger span::after{top:8px;width:16px}
+@media (min-width:1180px){.nav{display:flex}.burger{display:none}.mnav{display:none}.hd-tel{display:inline-flex;min-height:50px;font-size:16px;padding:0 20px}}
+.mnav{position:fixed;inset:0;z-index:60;background:#fff;display:flex;flex-direction:column;padding:0 16px calc(24px + env(safe-area-inset-bottom));transform:translateX(100%);transition:transform .3s cubic-bezier(.3,.7,.4,1);visibility:hidden;overflow-y:auto}
+.mnav.open{transform:none;visibility:visible}
+.mnav-top{height:var(--hh);flex:none;display:flex;align-items:center;justify-content:space-between}
+.mnav-x{width:48px;height:48px;border:0;background:transparent;font-size:34px;line-height:1;cursor:pointer;color:var(--ink)}
+.mnav ul{list-style:none;margin:16px 0 0;padding:0}
+.mnav li a{display:flex;align-items:center;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font:600 25px/1.2 Saira,system-ui,sans-serif;text-decoration:none}
+.mnav li a::after{content:"";width:10px;height:10px;border:solid var(--red);border-width:2px 2px 0 0;transform:rotate(45deg)}
+.mnav-soc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.mnav-soc a{display:flex;align-items:center;justify-content:center;min-height:52px;border:1.5px solid var(--ink);text-decoration:none;font:600 16px/1 Saira,sans-serif}
+.mnav-bot{margin-top:auto;padding-top:24px;display:grid;gap:12px}
+.mnav-bot p{color:var(--mut);font-size:15px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:var(--ink);isolation:isolate}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture{z-index:-2}
+.hero picture img{object-fit:cover;object-position:50% 30%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,15,17,.6) 0,rgba(14,15,17,.1) 16%,rgba(14,15,17,.25) 30%,rgba(14,15,17,.78) 52%,rgba(14,15,17,.95) 100%)}
+.hero .sig{color:rgba(255,255,255,.55);margin-top:calc(var(--hh) + 24px);--pk:58%}
+.hero-in{padding:6px 0 30px}
+.hero h1{font-size:clamp(32px,3.1vw + 18px,84px);max-width:17ch;font-weight:700}
+.hero .lead{margin-top:16px;max-width:54ch;font-size:clamp(17px,.35vw + 15.5px,21px);color:rgba(255,255,255,.86)}
+.hero .btn{margin-top:28px}
+.hero .info{margin-top:18px;font-size:15.5px;color:rgba(255,255,255,.75)}
+.hero .info a{color:#fff;text-decoration:none;border-bottom:1.5px solid var(--red)}
+@media (max-width:899px) and (max-height:700px){.hero .sig{margin-top:calc(var(--hh) + 2px)}.hero-in{padding-bottom:20px}.hero .btn{margin-top:24px}}
+@media (min-width:900px){
+ .hero::before{background:linear-gradient(90deg,rgba(14,15,17,.88) 0,rgba(14,15,17,.6) 36%,rgba(14,15,17,0) 64%),linear-gradient(180deg,rgba(14,15,17,.55) 0,rgba(14,15,17,0) 20%,rgba(14,15,17,0) 70%,rgba(14,15,17,.55) 100%)}
+ .hero picture img{object-position:50% 45%}
+ .hero .sig{margin-top:calc(var(--hh) + 24px);--pk:calc((100vw - var(--w))/2 + min(50vw,900px))}
+ .hero-in{padding:14px 0 max(56px,10vh)}
+ .hero h1{max-width:22ch;font-size:clamp(44px,2.2vw + 22px,74px)}
+ .hero .lead{max-width:50ch}
+}
+
+/* sekcje */
+.sec{padding:var(--gap) 0}
+.sz{background:var(--sz)}
+.sec-h{max-width:900px;margin-bottom:clamp(30px,3.4vw,56px)}
+.sec-h .sig{width:min(100%,420px);margin-bottom:14px;--pk:30px}
+.sec-h h2,.h2{font-size:clamp(31px,2.4vw + 17px,64px)}
+.sec-h p{margin-top:16px;color:var(--mut);max-width:62ch}
+
+/* oferta */
+.of-grid{display:grid;gap:clamp(22px,2vw,32px) clamp(14px,1.6vw,28px);grid-template-columns:1fr 1fr}
+@media (min-width:1000px){.of-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1600px){.of-grid{grid-template-columns:repeat(6,1fr)}}
+.of{margin:0;position:relative}
+.of .ph{aspect-ratio:4/3;overflow:hidden;background:var(--sz)}
+.of img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.3,.7,.4,1)}
+.of:hover img{transform:scale(1.04)}
+.of h3{margin-top:16px;font-size:clamp(19px,.6vw + 16.5px,25px);display:flex;align-items:center;gap:10px}
+.of h3::before{content:"";flex:none;width:18px;height:3px;background:var(--red)}
+.of p{margin-top:8px;color:var(--mut);font-size:15.5px;line-height:1.5}
+@media (max-width:599px){.of-grid{grid-template-columns:1fr;gap:18px}.of{display:grid;grid-template-columns:42% 1fr;gap:0 16px;align-items:center}.of .ph{grid-row:1/3}.of h3{margin-top:0;align-self:end}.of p{align-self:start;margin-top:6px}}
+.of-cta{margin-top:clamp(36px,4vw,60px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding-top:26px;border-top:1px solid var(--line)}
+.of-cta p{max-width:64ch;color:var(--ink2)}
+
+/* realizacje - ciemna sekcja */
+.real{background:var(--ink);color:#fff;padding:var(--gap) 0}
+.real .sec-h p{color:rgba(255,255,255,.72)}
+.real .sig{color:rgba(255,255,255,.22)}
+.gal-top{width:var(--pas);margin:0 auto 18px;display:flex;align-items:end;justify-content:space-between;gap:16px}
+.gal-top .cnt{font:500 15px/1 Saira,sans-serif;color:rgba(255,255,255,.6)}
+.arr{display:flex;gap:8px;flex:none}
+.arr button{width:50px;height:50px;border:1.5px solid rgba(255,255,255,.5);background:transparent;cursor:pointer;display:grid;place-items:center;color:#fff;transition:background-color .2s ease,opacity .2s ease,border-color .2s ease}
+.arr button:hover{background:var(--red);border-color:var(--red)}
+.arr button:disabled{opacity:.25;cursor:default;background:transparent;border-color:rgba(255,255,255,.5)}
+.arr button::before{content:"";width:9px;height:9px;border:solid currentColor;border-width:2px 2px 0 0;transform:translateX(-2px) rotate(45deg)}
+.arr button:first-child::before{transform:translateX(2px) rotate(-135deg)}
+@media (max-width:699px){.arr{display:none}}
+.strip{width:var(--pas);margin:0 auto;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip.drag{cursor:grabbing;scroll-snap-type:none}
+.strip figure{margin:0;flex:0 0 86%;scroll-snap-align:start;min-width:0}
+.strip button{display:block;width:100%;padding:0;border:0;background:#1d1f23;cursor:zoom-in;aspect-ratio:4/3;overflow:hidden}
+.strip button img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.3,.7,.4,1);user-select:none;-webkit-user-drag:none}
+.strip button:hover img{transform:scale(1.035)}
+.strip figcaption{margin-top:12px;display:flex;gap:10px;align-items:baseline;font:500 16px/1.3 Saira,sans-serif;color:rgba(255,255,255,.88)}
+.strip figcaption span{font-size:13px;color:var(--red);font-weight:600}
+@media (min-width:700px){.strip figure{flex-basis:calc((100% - 14px)/1.6)}}
+@media (min-width:1000px){.strip figure{flex-basis:calc((100% - 28px)/2.4)}}
+@media (min-width:1280px){.strip figure{flex-basis:calc((100% - 28px)/3)}}
+@media (min-width:1700px){.strip figure{flex-basis:calc((100% - 42px)/4)}}
+.social{width:var(--w);margin:clamp(48px,5vw,80px) auto 0;display:grid;gap:22px 48px;align-items:center;padding-top:30px;border-top:1px solid rgba(255,255,255,.16)}
+@media (min-width:1000px){.social{grid-template-columns:minmax(0,1fr) auto}}
+.social h3{font-size:clamp(24px,1.1vw + 19px,36px)}
+.social p{margin-top:10px;color:rgba(255,255,255,.72);max-width:60ch}
+.social-b{display:flex;flex-wrap:wrap;gap:12px}
+.social-b .btn{flex:1 1 230px}
+.social-b small{display:block;font:400 13px/1 Archivo,sans-serif;opacity:.8;margin-top:3px}
+.social-b .btn span{text-align:left}
+
+/* o firmie */
+.of-g{display:grid;gap:clamp(36px,5vw,96px);align-items:start}
+@media (min-width:1000px){.of-g{grid-template-columns:minmax(0,6fr) minmax(0,6fr)}}
+.txt>p{margin-top:16px;color:var(--ink2);max-width:62ch}
+.txt>p:first-of-type{margin-top:0}
+.fakty{list-style:none;margin:30px 0 0;padding:0;display:grid}
+@media (min-width:600px){.fakty{grid-template-columns:1fr 1fr;column-gap:36px}}
+.fakty li{padding:16px 0;border-top:1px solid #C9CED6}
+.fakty b{display:block;font:700 20px/1.25 Saira,sans-serif}
+.fakty span{display:block;margin-top:4px;font-size:15.5px;color:var(--mut)}
+.fotos{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.fotos button{display:block;padding:0;border:0;cursor:zoom-in;overflow:hidden;background:#dde1e6}
+.fotos button img{width:100%;height:100%;object-fit:cover}
+.fotos .f1{grid-column:1/-1;aspect-ratio:16/10}
+.fotos .f2{aspect-ratio:4/3}
+.fotos .f3{aspect-ratio:4/3}
+.fotos figcaption{grid-column:1/-1;font-size:14.5px;color:var(--mut)}
+.fotos figure{margin:0;display:contents}
+
+/* kontakt */
+.kt{display:grid;gap:clamp(36px,4vw,80px)}
+@media (min-width:1000px){.kt{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}}
+.kt-dane a{text-decoration:none}
+.kt-tel{display:block;font:700 clamp(30px,1.8vw + 20px,48px)/1.15 Saira,sans-serif;margin-top:clamp(20px,2vw,30px)}
+.kt-tel+.kt-tel{margin-top:4px}
+.kt-tel:hover{color:var(--red)}
+.kt-mail{display:inline-block;margin-top:14px;font-size:1.1em;font-weight:600;border-bottom:2px solid var(--red)}
+.kt-adr{margin-top:28px;display:grid;gap:18px}
+@media (min-width:600px){.kt-adr{grid-template-columns:1fr 1fr}}
+.kt-adr h3{font:600 15px/1.4 Saira,sans-serif;color:var(--red);margin-bottom:4px}
+.kt-adr p{font-size:16.5px;color:var(--ink2)}
+.kt-soc{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+.kt-soc a{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid var(--ink);font:600 15.5px/1 Saira,sans-serif}
+.kt-soc a:hover{background:var(--ink);color:#fff}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:var(--sz);border:1px solid var(--line)}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+form{background:var(--sz);padding:clamp(22px,3vw,48px);align-self:start}
+form h3{font-size:clamp(24px,1vw + 19px,34px)}
+form>p{margin-top:8px;color:var(--mut);font-size:16px}
+.f-row{display:grid;gap:14px;margin-top:16px}
+@media (min-width:600px){.f-row.two{grid-template-columns:1fr 1fr}}
+.f-row label{display:grid;gap:6px;font:600 15px/1.4 Saira,sans-serif}
+.f-row input,.f-row textarea,.f-row select{width:100%;font:400 16px/1.4 Archivo,system-ui,sans-serif;padding:13px 14px;border:1px solid #B5BBC4;border-bottom:2px solid #8E959F;background:#fff;color:var(--ink);border-radius:0}
+.f-row input:focus,.f-row textarea:focus,.f-row select:focus{outline:0;border-bottom-color:var(--red);box-shadow:0 2px 0 var(--red)}
+.f-row textarea{min-height:120px;resize:vertical}
+.f-chk{display:flex;gap:12px;align-items:flex-start;margin-top:18px;font-size:15px;cursor:pointer;color:var(--ink2)}
+.f-chk input{width:22px;height:22px;margin:1px 0 0;accent-color:var(--red);flex:none}
+form .btn{margin-top:22px;width:100%}
+@media (min-width:600px){form .btn{width:auto}}
+.f-ok{margin-top:14px;font-weight:600}
+
+/* stopka */
+.ft{background:var(--ink);color:rgba(255,255,255,.78);padding:clamp(48px,5vw,80px) 0 calc(28px + env(safe-area-inset-bottom));font-size:15.5px}
+.ft .sig{color:rgba(255,255,255,.16);margin-bottom:clamp(28px,3vw,44px);--pk:70%}
+.ft-g{display:grid;grid-template-columns:1fr 1fr;gap:28px 20px}
+@media (min-width:900px){.ft-g{grid-template-columns:2fr 1fr 1fr 1fr}}
+.ft-g>div:first-child{grid-column:1/-1}
+@media (min-width:900px){.ft-g>div:first-child{grid-column:auto}}
+.ft .logo{color:#fff}
+.ft .logo svg{width:150px;height:56px}
+.ft-claim{margin-top:14px;max-width:34ch;color:rgba(255,255,255,.7)}
+.ft h4{margin:0 0 10px;font:600 15px/1.3 Saira,sans-serif;color:#fff}
+.ft ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ft a{text-decoration:none}
+.ft a:hover{color:#fff;text-decoration:underline}
+.ft-bot{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;color:rgba(255,255,255,.6);font-size:14px}
+
+/* pasek tel. */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;background:var(--ink);padding-bottom:env(safe-area-inset-bottom);transform:translateY(110%);transition:transform .3s ease}
+.mbar.on{transform:none}
+.mbar a{display:flex;align-items:center;justify-content:center;min-height:54px;color:#fff;text-decoration:none;font:600 16px/1 Saira,sans-serif}
+.mbar a+a{background:var(--red)}
+@media (min-width:1180px){.mbar{display:none}}
+@media (max-width:1179px){body{padding-bottom:54px}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:80;background:rgba(14,15,17,.96);display:none;flex-direction:column;align-items:center;justify-content:center;padding:56px 12px 64px;touch-action:pan-y}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:calc(100svh - 140px);width:auto;height:auto;object-fit:contain}
+.lb-c{color:rgba(255,255,255,.85);font-size:15px;margin-top:12px;text-align:center}
+.lb button{position:absolute;border:0;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;width:48px;height:48px;display:grid;place-items:center}
+.lb button:hover{background:var(--red)}
+.lb-x{top:8px;right:8px;font-size:30px;line-height:1}
+.lb-p,.lb-n{top:50%;margin-top:-24px}
+.lb-p{left:8px}.lb-n{right:8px}
+.lb-p::before,.lb-n::before{content:"";width:10px;height:10px;border:solid #fff;border-width:2px 2px 0 0;transform:translateX(-2px) rotate(45deg)}
+.lb-p::before{transform:translateX(2px) rotate(-135deg)}
+.lb-i{position:absolute;top:20px;left:16px;color:rgba(255,255,255,.7);font:500 14px/1 Saira,sans-serif}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="0 8 260 96"><path class="ln" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="miter" stroke-miterlimit="20" d="M3 58.5H158l3.5 4 3.5-9 3.5 14L173.5 14l3.5 84 3.5-39.5H190l2.6-35 2.6 35H256"/><path fill="none" stroke="currentColor" stroke-width="10.5" d="M44.5 49.6A13 14.3 0 1 0 44.5 69.4"/><path fill="currentColor" fill-rule="evenodd" d="M60 36H89C99 36 104 42 104 49C104 55 100.5 59 95.5 61L105 82H90L82.5 63.5H74V82H60ZM74 46.5V54H86.5C89.5 54 91 52.5 91 50.2C91 48 89.5 46.5 86.5 46.5Z"/><path fill="currentColor" d="M181 36H215V48H196V55H213V67H196V84H181ZM220 42H255V53H244V80H232V53H220Z"/><path fill="#D9261C" fill-rule="evenodd" d="M106 91L128 30H150L172 91H154.5L150.5 79H127.5L123.5 91ZM131.5 67.5H146.5L139 45Z"/></symbol>
+<symbol id="pk" viewBox="0 0 64 40"><path d="M0 20H18l3 4 3-9 4 13 5-26 5 36 4-18H64" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter" stroke-miterlimit="20"/></symbol>
+<symbol id="imp" viewBox="0 0 24 14"><path d="M0 7H8l2-5 3 10 2-5H24M19 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+</svg>
+
+<header class="hd" id="hd">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Craft Media - strona główna"><svg role="img" aria-label="CRAFT"><use href="#logo"/></svg></a>
+  <nav class="nav" aria-label="Menu główne">
+   <a href="#oferta">Oferta</a>
+   <a href="#realizacje">Realizacje</a>
+   <a href="#o-firmie">O firmie</a>
+   <a href="#kontakt">Kontakt</a>
+   <span class="sep" aria-hidden="true"></span>
+   <a class="soc" href="https://www.instagram.com/craftmedia.pl/" target="_blank" rel="noopener">Instagram</a>
+   <a class="soc" href="https://www.facebook.com/craftmediapl/" target="_blank" rel="noopener">Facebook</a>
+  </nav>
+  <a class="btn hd-tel" href="tel:+48501184577">501 184 577</a>
+  <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+ </div>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+ <div class="mnav-top">
+  <a class="logo" href="#top" aria-label="Craft Media - strona główna" style="color:var(--ink)"><svg role="img" aria-label="CRAFT"><use href="#logo"/></svg></a>
+  <button class="mnav-x" id="mnavx" aria-label="Zamknij menu">&times;</button>
+ </div>
+ <ul>
+  <li><a href="#oferta">Oferta</a></li>
+  <li><a href="#realizacje">Realizacje</a></li>
+  <li><a href="#o-firmie">O firmie</a></li>
+  <li><a href="#kontakt">Kontakt i dojazd</a></li>
+ </ul>
+ <div class="mnav-soc">
+  <a href="https://www.instagram.com/craftmedia.pl/" target="_blank" rel="noopener">Instagram</a>
+  <a href="https://www.facebook.com/craftmediapl/" target="_blank" rel="noopener">Facebook</a>
+ </div>
+ <div class="mnav-bot">
+  <a class="btn" href="tel:+48501184577">Zadzwoń: 501 184 577</a>
+  <p>ul. Potockich 62, Warszawa-Wawer · pon.-pt. 9-17</p>
+ </div>
+</div>
+
+<main id="top">
+<section class="hero">
+ <picture>
+  <source media="(max-width:899px)" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w" sizes="100vw" width="760" height="1227">
+  <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-1920.webp 1920w" sizes="100vw" width="1600" height="1068" alt="Monitory zamontowane w zagłówkach przednich foteli, widok z tylnej kanapy" fetchpriority="high" decoding="async">
+ </picture>
+ <div class="sig" aria-hidden="true"><svg><use href="#pk"/></svg></div>
+ <div class="wrap hero-in">
+  <h1>Car audio i multimedia w&nbsp;Warszawie - montaż, który wygląda jak fabryczny</h1>
+  <p class="lead">Od 2002 roku modernizujemy audio i wideo w samochodach, łodziach i jachtach - niezależnie od marki, modelu czy wieku auta.</p>
+  <a class="btn" href="#realizacje">Zobacz realizacje <svg aria-hidden="true"><use href="#imp"/></svg></a>
+  <p class="info">Tel. <a href="tel:+48501184577">501 184 577</a> · <span style="white-space:nowrap">ul. Potockich 62, Warszawa-Wawer</span></p>
+ </div>
+</section>
+
+<section class="sec" id="oferta">
+ <div class="wrap">
+  <div class="sec-h">
+   <div class="sig" aria-hidden="true"><svg><use href="#pk"/></svg></div>
+   <h2>Co montujemy</h2>
+   <p>Sprzedaż i montaż sprzętu w jednym miejscu. Każdy element dopasowujemy tak, żeby nie odbierał funkcji wnętrza i wyglądał, jakby był w aucie od nowości.</p>
+  </div>
+  <div class="of-grid">
+   <figure class="of"><div class="ph"><img src="img/of-audio-440.webp" srcset="img/of-audio-440.webp 440w, img/of-audio-720.webp 720w" sizes="(min-width:1600px) 15vw, (min-width:1000px) 30vw, 46vw" width="720" height="540" alt="Głośnik zamontowany w podłodze bagażnika" loading="lazy" decoding="async"></div><h3>Car audio</h3><p>Radia, głośniki i wzmacniacze z montażem w każdym modelu auta, z obsługą USB i urządzeń Apple.</p></figure>
+   <figure class="of"><div class="ph"><img src="img/of-multi-440.webp" srcset="img/of-multi-440.webp 440w, img/of-multi-720.webp 720w" sizes="(min-width:1600px) 15vw, (min-width:1000px) 30vw, 46vw" width="720" height="540" alt="Ekran multimedialny z obrazem kamery cofania w Mercedesie G 6x6" loading="lazy" decoding="async"></div><h3>Multimedia</h3><p>Ekrany, systemy multimedialne, kamery i wideorejestratory. Auto staje się centrum rozrywki.</p></figure>
+   <figure class="of"><div class="ph"><img src="img/of-wygl-440.webp" srcset="img/of-wygl-440.webp 440w, img/of-wygl-720.webp 720w" sizes="(min-width:1600px) 15vw, (min-width:1000px) 30vw, 46vw" width="720" height="540" alt="Rozebrane wnętrze samochodu podczas wygłuszania" loading="lazy" decoding="async"></div><h3>Wygłuszanie</h3><p>Maty DYNAMAT, GLADEN i STP: czystszy dźwięk i mniej hałasu z zewnątrz w czasie jazdy.</p></figure>
+   <figure class="of"><div class="ph"><img src="img/of-folie-440.webp" srcset="img/of-folie-440.webp 440w, img/of-folie-720.webp 720w" sizes="(min-width:1600px) 15vw, (min-width:1000px) 30vw, 46vw" width="720" height="540" alt="Lusterko czarnego Mercedesa klasy V" loading="lazy" decoding="async"></div><h3>Oklejanie foliami</h3><p>Profesjonalne oklejanie samochodów foliami w Warszawie.</p></figure>
+   <figure class="of"><div class="ph"><img src="img/of-zabezp-440.webp" srcset="img/of-zabezp-440.webp 440w, img/of-zabezp-720.webp 720w" sizes="(min-width:1600px) 15vw, (min-width:1000px) 30vw, 46vw" width="720" height="540" alt="Kluczyk samochodowy w dłoni" loading="lazy" decoding="async"></div><h3>Zabezpieczenia</h3><p>Alarmy, immobilizery, Igla i lokalizatory GPS z powiadomieniem SMS. Dla aut i łodzi.</p></figure>
+   <figure class="of"><div class="ph"><img src="img/of-lodzie-440.webp" srcset="img/of-lodzie-440.webp 440w, img/of-lodzie-720.webp 720w" sizes="(min-width:1600px) 15vw, (min-width:1000px) 30vw, 46vw" width="720" height="540" alt="Łódź motorowa na przyczepie w hali Craft" loading="lazy" decoding="async"></div><h3>Łodzie i jachty</h3><p>Nagłośnienie, zabudowy, przeróbki i modyfikacje łodzi i jachtów.</p></figure>
+  </div>
+  <div class="of-cta">
+   <p>Nie wiesz, co da się zrobić w Twoim aucie? Napisz markę i model - doradzimy i przygotujemy wstępną wycenę.</p>
+   <a class="btn dk" href="#kontakt">Zapytaj o wycenę <svg aria-hidden="true"><use href="#imp"/></svg></a>
+  </div>
+ </div>
+</section>
+
+<section class="real" id="realizacje">
+ <div class="wrap">
+  <div class="sec-h">
+   <div class="sig" aria-hidden="true"><svg><use href="#pk"/></svg></div>
+   <h2>Realizacje - od Maybacha po łódź Galeon</h2>
+   <p>Montujemy dyskretnie, tak żeby ekran, głośnik czy kamera wyglądały na fabrycznie zamontowane. Także w autach mniej znanych i zabytkowych. Przesuń zdjęcia palcem albo myszką, kliknij, żeby powiększyć.</p>
+  </div>
+ </div>
+ <div class="gal">
+  <div class="gal-top"><span class="cnt" id="cnt">13 realizacji</span><div class="arr"><button aria-label="Przewiń w lewo" data-s="-1"></button><button aria-label="Przewiń w prawo" data-s="1"></button></div></div>
+  <div class="strip" data-g="r">
+   <figure><button data-big="img/r1-big.webp" data-cap="Mercedes S W222 Long - tylna kanapa i wnętrze"><img src="img/r1-600.webp" srcset="img/r1-600.webp 600w, img/r1-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Mercedes S W222 Long: tylna kanapa i wnętrze" loading="lazy" decoding="async"></button><figcaption><span>01</span>Mercedes S W222 Long</figcaption></figure>
+   <figure><button data-big="img/r2-big.webp" data-cap="Bentley Bentayga - wnętrze"><img src="img/r2-600.webp" srcset="img/r2-600.webp 600w, img/r2-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Bentley Bentayga: wnętrze" loading="lazy" decoding="async"></button><figcaption><span>02</span>Bentley Bentayga</figcaption></figure>
+   <figure><button data-big="img/r3-big.webp" data-cap="Porsche 911 Turbo - kokpit"><img src="img/r3-600.webp" srcset="img/r3-600.webp 600w, img/r3-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Porsche 911 Turbo: kokpit" loading="lazy" decoding="async"></button><figcaption><span>03</span>Porsche 911 Turbo</figcaption></figure>
+   <figure><button data-big="img/r4-big.webp" data-cap="Mercedes G Klasa 6x6 AMG - kokpit i wskaźniki pod sufitem"><img src="img/r4-600.webp" srcset="img/r4-600.webp 600w, img/r4-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Mercedes G Klasa 6x6 AMG: kokpit i wskaźniki pod sufitem" loading="lazy" decoding="async"></button><figcaption><span>04</span>Mercedes G Klasa 6x6 AMG</figcaption></figure>
+   <figure><button data-big="img/r5-big.webp" data-cap="Maybach 57 S - monitor w oparciu fotela"><img src="img/r5-600.webp" srcset="img/r5-600.webp 600w, img/r5-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Maybach 57 S: monitor w oparciu fotela" loading="lazy" decoding="async"></button><figcaption><span>05</span>Maybach 57 S</figcaption></figure>
+   <figure><button data-big="img/r6-big.webp" data-cap="Mercedes S W222 Long - głośnik w drzwiach"><img src="img/r6-600.webp" srcset="img/r6-600.webp 600w, img/r6-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Mercedes S W222 Long: głośnik w drzwiach" loading="lazy" decoding="async"></button><figcaption><span>06</span>Mercedes S W222 Long</figcaption></figure>
+   <figure><button data-big="img/r7-big.webp" data-cap="Range Rover Startech - wideorejestrator za lusterkiem"><img src="img/r7-600.webp" srcset="img/r7-600.webp 600w, img/r7-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Range Rover Startech: wideorejestrator za lusterkiem" loading="lazy" decoding="async"></button><figcaption><span>07</span>Range Rover Startech</figcaption></figure>
+   <figure><button data-big="img/r8-big.webp" data-cap="Bentley Bentayga - deska rozdzielcza"><img src="img/r8-600.webp" srcset="img/r8-600.webp 600w, img/r8-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Bentley Bentayga: deska rozdzielcza" loading="lazy" decoding="async"></button><figcaption><span>08</span>Bentley Bentayga</figcaption></figure>
+   <figure><button data-big="img/r9-big.webp" data-cap="Bentley Continental Cabrio - kokpit"><img src="img/r9-600.webp" srcset="img/r9-600.webp 600w, img/r9-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Bentley Continental Cabrio: kokpit" loading="lazy" decoding="async"></button><figcaption><span>09</span>Bentley Continental Cabrio</figcaption></figure>
+   <figure><button data-big="img/r10-big.webp" data-cap="Galeon 640 - głośnik w kokpicie łodzi"><img src="img/r10-600.webp" srcset="img/r10-600.webp 600w, img/r10-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Galeon 640: głośnik w kokpicie łodzi" loading="lazy" decoding="async"></button><figcaption><span>10</span>Galeon 640</figcaption></figure>
+   <figure><button data-big="img/r11-big.webp" data-cap="BMW X6 - ekran multimedialny"><img src="img/r11-600.webp" srcset="img/r11-600.webp 600w, img/r11-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="BMW X6: ekran multimedialny" loading="lazy" decoding="async"></button><figcaption><span>11</span>BMW X6</figcaption></figure>
+   <figure><button data-big="img/r12-big.webp" data-cap="Mercedes G Klasa 6x6 AMG - sylwetka auta"><img src="img/r12-600.webp" srcset="img/r12-600.webp 600w, img/r12-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Mercedes G Klasa 6x6 AMG: sylwetka auta" loading="lazy" decoding="async"></button><figcaption><span>12</span>Mercedes G Klasa 6x6 AMG</figcaption></figure>
+   <figure><button data-big="img/r13-big.webp" data-cap="Galeon 640 - jacht w porcie"><img src="img/r13-600.webp" srcset="img/r13-600.webp 600w, img/r13-900.webp 900w" sizes="(min-width:1700px) 24vw, (min-width:1280px) 32vw, (min-width:1000px) 40vw, (min-width:700px) 60vw, 86vw" width="900" height="675" alt="Galeon 640: jacht w porcie" loading="lazy" decoding="async"></button><figcaption><span>13</span>Galeon 640</figcaption></figure>
+  </div>
+ </div>
+ <div class="social">
+  <div>
+   <h3>Najnowsze realizacje na Instagramie i Facebooku</h3>
+   <p>Instagram i Facebook to nasze główne kanały - tam na bieżąco pokazujemy kolejne realizacje. Zajrzyj i napisz do nas tam, gdzie Ci wygodniej.</p>
+  </div>
+  <div class="social-b">
+   <a class="btn" href="https://www.instagram.com/craftmedia.pl/" target="_blank" rel="noopener"><span>Instagram<small>@craftmedia.pl</small></span><svg aria-hidden="true"><use href="#imp"/></svg></a>
+   <a class="btn ol" href="https://www.facebook.com/craftmediapl/" target="_blank" rel="noopener"><span>Facebook<small>craftmediapl</small></span><svg aria-hidden="true"><use href="#imp"/></svg></a>
+  </div>
+ </div>
+</section>
+
+<section class="sec sz" id="o-firmie">
+ <div class="wrap">
+  <div class="of-g">
+   <div>
+    <div class="sec-h">
+     <div class="sig" aria-hidden="true"><svg><use href="#pk"/></svg></div>
+     <h2>Od 2002 roku w Wawrze</h2>
+    </div>
+    <div class="txt">
+     <p>Specjalizujemy się w modernizacji audio i wideo w pojazdach każdej marki, modelu i rocznika. Montujemy sprzęt renomowanych producentów, a wnętrze po modernizacji ma wyglądać tak, jakby wyszło z fabryki.</p>
+     <p>Pracujemy dla klientów indywidualnych, a na stałe także z salonami samochodowymi, importerami i firmami, które zarządzają flotami pojazdów. Do tego projektujemy i montujemy systemy alarmowe i monitoring w domach i firmach.</p>
+    </div>
+    <ul class="fakty">
+     <li><b>Gwarancja na każdą pracę</b><span>wielomiesięczna gwarancja na wszystkie wykonane montaże</span></li>
+     <li><b>Szkolenia i certyfikaty</b><span>zespół stale się szkoli, certyfikaty wiszą w naszym biurze</span></li>
+     <li><b>Sprawdzone materiały</b><span>do wygłuszeń używamy mat DYNAMAT, GLADEN i STP</span></li>
+     <li><b>Dla firm i flot</b><span>salony, importerzy, floty; rabaty dla stałych klientów</span></li>
+    </ul>
+   </div>
+   <div class="fotos" data-g="o">
+    <button class="f1" data-big="img/onas-960.webp" data-cap="Wnętrze z ekranem multimedialnym i czerwonym podświetleniem"><img src="img/onas-600.webp" srcset="img/onas-600.webp 600w, img/onas-960.webp 960w" sizes="(min-width:1000px) 45vw, 92vw" width="960" height="720" alt="Wnętrze samochodu z ekranem multimedialnym i czerwonym podświetleniem" loading="lazy" decoding="async"></button>
+    <button class="f2" data-big="img/pracownia-1000.webp" data-cap="Biuro Craft przy Potockich 62 - ściana certyfikatów"><img src="img/pracownia-600.webp" width="600" height="382" alt="Biuro Craft: ściana z certyfikatami i skórzana sofa" loading="lazy" decoding="async"></button>
+    <button class="f3" data-big="img/r10-big.webp" data-cap="Galeon 640 - głośnik w kokpicie łodzi"><img src="img/r10-600.webp" width="600" height="450" alt="Głośnik zamontowany w kokpicie łodzi Galeon 640" loading="lazy" decoding="async"></button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="kontakt">
+ <div class="wrap kt">
+  <div class="kt-dane">
+   <div class="sec-h" style="margin-bottom:0">
+    <div class="sig" aria-hidden="true"><svg><use href="#pk"/></svg></div>
+    <h2>Przyjedź albo zadzwoń</h2>
+    <p>Wycenę montażu przygotujemy po rozmowie o aucie i Twoich oczekiwaniach.</p>
+   </div>
+   <a class="kt-tel" href="tel:+48501184577">501 184 577</a>
+   <a class="kt-tel" href="tel:+48227409070">22 740 90 70</a>
+   <a class="kt-mail" href="mailto:info@craftmedia.pl">info@craftmedia.pl</a>
+   <div class="kt-adr">
+    <div><h3>Adres</h3><p>ul. Potockich 62<br>04-534 Warszawa-Wawer</p></div>
+    <div><h3>Godziny pracy</h3><p>poniedziałek - piątek<br>9:00 - 17:00</p></div>
+   </div>
+   <div class="kt-soc">
+    <a href="https://www.instagram.com/craftmedia.pl/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/craftmediapl/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.youtube.com/channel/UC-tFlHwbRUWR8imllZeRY6Q" target="_blank" rel="noopener">YouTube</a>
+   </div>
+   <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=ul.%20Potockich%2062%2C%2004-534%20Warszawa&amp;z=15&amp;output=embed"></div>
+  </div>
+  <form id="form" novalidate>
+   <h3>Zapytaj o montaż</h3>
+   <p>Odpowiemy mailem albo oddzwonimy w godzinach pracy.</p>
+   <div class="f-row two">
+    <label>Imię<input name="imie" autocomplete="given-name"></label>
+    <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
+   </div>
+   <div class="f-row two">
+    <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+    <label>Samochód lub łódź<input name="auto" placeholder="marka, model, rocznik"></label>
+   </div>
+   <div class="f-row">
+    <label>Czego dotyczy zapytanie
+     <select name="temat"><option>Car audio</option><option>Multimedia, kamery, wideorejestrator</option><option>Wygłuszanie</option><option>Oklejanie foliami</option><option>Zabezpieczenia: alarm, immobilizer, GPS</option><option>Łódź lub jacht</option><option>Inne</option></select>
+    </label>
+   </div>
+   <div class="f-row"><label>Wiadomość<textarea name="msg" placeholder="Co chcesz zamontować albo zmienić?"></textarea></label></div>
+   <label class="f-chk"><input type="checkbox" required> <span>Zgadzam się na przetwarzanie moich danych w celu odpowiedzi na zapytanie.</span></label>
+   <button class="btn" type="submit">Wyślij zapytanie <svg aria-hidden="true"><use href="#imp"/></svg></button>
+   <p class="f-ok" id="fok" hidden>To podgląd strony - formularz nie wysyła jeszcze wiadomości.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="ft">
+ <div class="wrap">
+  <div class="sig" aria-hidden="true"><svg><use href="#pk"/></svg></div>
+  <div class="ft-g">
+   <div>
+    <a class="logo" href="#top" aria-label="Craft Media - do góry"><svg role="img" aria-label="CRAFT"><use href="#logo"/></svg></a>
+    <p class="ft-claim">Car audio, multimedia, wygłuszanie i zabezpieczenia pojazdów oraz łodzi. Warszawa-Wawer, od 2002 roku.</p>
+   </div>
+   <div><h4>Kontakt</h4><ul><li><a href="tel:+48501184577">501 184 577</a></li><li><a href="tel:+48227409070">22 740 90 70</a></li><li><a href="mailto:info@craftmedia.pl">info@craftmedia.pl</a></li><li>ul. Potockich 62, Warszawa</li></ul></div>
+   <div><h4>Strona</h4><ul><li><a href="#oferta">Oferta</a></li><li><a href="#realizacje">Realizacje</a></li><li><a href="#o-firmie">O firmie</a></li><li><a href="#kontakt">Kontakt</a></li></ul></div>
+   <div><h4>Obserwuj</h4><ul><li><a href="https://www.instagram.com/craftmedia.pl/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/craftmediapl/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/channel/UC-tFlHwbRUWR8imllZeRY6Q" target="_blank" rel="noopener">YouTube</a></li></ul></div>
+  </div>
+  <div class="ft-bot">
+   <span>© <span id="rok">2026</span> CRAFT Krzysztof Bujanowicz · NIP 1131270640</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=craftmedia.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Szybki kontakt"><a href="tel:+48501184577">Zadzwoń</a><a href="https://www.instagram.com/craftmedia.pl/" target="_blank" rel="noopener">Instagram</a></nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <span class="lb-i" id="lbi"></span>
+ <button class="lb-x" id="lbx" aria-label="Zamknij">&times;</button>
+ <button class="lb-p" id="lbp" aria-label="Poprzednie zdjęcie"></button>
+ <img id="lbimg" alt="">
+ <p class="lb-c" id="lbc"></p>
+ <button class="lb-n" id="lbn" aria-label="Następne zdjęcie"></button>
+</div>
+
+<script>
+(function(){
+var d=document,hd=d.getElementById('hd'),mb=d.getElementById('mbar'),hero=d.querySelector('.hero');
+d.getElementById('rok').textContent=new Date().getFullYear();
+function sc(){var y=scrollY;hd.classList.toggle('solid',y>40);mb.classList.toggle('on',y>hero.offsetHeight*.7)}
+addEventListener('scroll',sc,{passive:true});sc();
+var mn=d.getElementById('mnav'),bg=d.getElementById('burger');
+function mo(o){mn.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);d.body.style.overflow=o?'hidden':''}
+bg.onclick=function(){mo(true)};d.getElementById('mnavx').onclick=function(){mo(false)};
+mn.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mo(false)})});
+var secs=['oferta','realizacje','o-firmie','kontakt'].map(function(i){return d.getElementById(i)}),links=d.querySelectorAll('.nav a[href^="#"]');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.toggleAttribute('aria-current',l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});secs.forEach(function(s){io.observe(s)})}
+function drag(el){var x0,s0,on=false,moved=false;
+ el.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;on=true;moved=false;x0=e.clientX;s0=el.scrollLeft;el.classList.add('drag')});
+ addEventListener('pointermove',function(e){if(!on)return;var dx=e.clientX-x0;if(Math.abs(dx)>4)moved=true;el.scrollLeft=s0-dx});
+ addEventListener('pointerup',function(){if(!on)return;on=false;el.classList.remove('drag');var w=el.firstElementChild.getBoundingClientRect().width+14;el.scrollTo({left:Math.round(el.scrollLeft/w)*w,behavior:'smooth'})});
+ el.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation();moved=false}},true);
+}
+d.querySelectorAll('.gal').forEach(function(r){var s=r.querySelector('.strip'),bs=r.querySelectorAll('.arr button'),cn=d.getElementById('cnt'),n=s.children.length;drag(s);
+ function st(){var w=s.firstElementChild.getBoundingClientRect().width+14,i=Math.round(s.scrollLeft/w)+1,v=Math.max(1,Math.round(s.clientWidth/w));cn.textContent=(v>1?i+'-'+Math.min(n,i+v-1):i)+' / '+n;if(!bs.length)return;bs[0].disabled=s.scrollLeft<4;bs[1].disabled=s.scrollLeft+s.clientWidth>=s.scrollWidth-4}
+ s.addEventListener('scroll',st,{passive:true});addEventListener('resize',st);st();
+ bs.forEach(function(b){b.onclick=function(){var w=s.firstElementChild.getBoundingClientRect().width+14;s.scrollBy({left:w*(+b.dataset.s),behavior:'smooth'})}})});
+var lb=d.getElementById('lb'),li=d.getElementById('lbimg'),lc=d.getElementById('lbc'),lii=d.getElementById('lbi'),list=[],cur=0,last;
+function show(i){cur=(i+list.length)%list.length;var b=list[cur],im=b.querySelector('img');li.src=im.currentSrc||im.src;var big=new Image();big.onload=function(){if(list[cur]===b)li.src=b.dataset.big};setTimeout(function(){big.src=b.dataset.big},150);li.alt=im.alt;lc.textContent=b.dataset.cap||im.alt;lii.textContent=list.length>1?(cur+1)+' / '+list.length:'';d.getElementById('lbp').hidden=d.getElementById('lbn').hidden=list.length<2}
+function open(b){var g=b.closest('[data-g]');list=[].slice.call(g.querySelectorAll('[data-big]'));last=b;lb.classList.add('open');d.body.style.overflow='hidden';show(list.indexOf(b));d.getElementById('lbx').focus()}
+function close(){lb.classList.remove('open');d.body.style.overflow='';li.removeAttribute('src');if(last)last.focus()}
+d.querySelectorAll('[data-big]').forEach(function(b){b.addEventListener('click',function(){open(b)})});
+d.getElementById('lbx').onclick=close;d.getElementById('lbp').onclick=function(){show(cur-1)};d.getElementById('lbn').onclick=function(){show(cur+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)close()});
+addEventListener('keydown',function(e){if(e.key==='Escape'){if(lb.classList.contains('open'))close();else if(mn.classList.contains('open'))mo(false)}if(!lb.classList.contains('open'))return;if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+var tx=null;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){if(tx===null)return;var dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)show(cur+(dx<0?1:-1));tx=null});
+var mp=d.getElementById('mapa');
+if('IntersectionObserver' in window){var mo2=new IntersectionObserver(function(es){if(es[0].isIntersecting){var f=d.createElement('iframe');f.src=mp.dataset.src;f.title='Mapa: ul. Potockich 62, Warszawa-Wawer';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';mp.appendChild(f);mo2.disconnect()}},{rootMargin:'300px'});mo2.observe(mp)}
+d.getElementById('form').addEventListener('submit',function(e){e.preventDefault();d.getElementById('fok').hidden=false});
+})();
+</script>
+</body>
+</html>
